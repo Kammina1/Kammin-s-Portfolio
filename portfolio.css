@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: #493600;
+    color: #fff;
+  }
+  
+  nav ul {
+      display: flex;
+      justify-content: space-between;
+      min-width: 300px;
+  }
+
+  nav a {
+      color: #fff
+      text-decoration: none;
+      font-weight: bold;
+  }
