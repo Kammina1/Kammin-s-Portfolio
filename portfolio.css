@@ -1,15 +1,22 @@
 body {
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
   }
   
+.main-container {
+  display: flex;
+  min-height: calc(100vh - 100px);
+}
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1%;
-    background-color: #493600;
-    color: #fff;
+    background-color: #946e05;
+    color: black;
+    height: 100px;
   }
   
   nav ul {
@@ -19,7 +26,34 @@ header {
   }
 
   nav a {
-      color: #fff
+      color: black;
       text-decoration: none;
       font-weight: bold;
   }
+
+  nav a:hover{
+    color: silver;
+  }
+
+.sidebar {
+  min-width: 300px;
+  background-color: silver;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+  display: flex;
+  padding-left: 5px;
+}
+
+@media only screen and (max-width: 992px) {
+  .main-container{
+    flex-direction: column-reverse;
+  }
+
+  .sidebar {
+    flex-wrap: wrap;
+  }
+}
